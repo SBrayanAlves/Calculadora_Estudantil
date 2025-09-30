@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div id="Unieuro_logo">
+            <img src="images/unieurologo.png" alt="">
+        </div>
+        
+        <h1>Prototipo - Calculadora UniEURO</h1></header>
+
+    <section>
+
+        <div id="div1">
+            <label for="nvalor">Valor:</label>
+            <input type="number" name="nvalor" id="valor" min="0">
+            <br>
+            <input type="number" id="percentual" placeholder="0%" min="5" max="45">
+            <br>
+            <label for="prouni">ProUNI:</label>
+            <input type="checkbox" name="prouni" id="prouni"> 
+            <br>
+            <input type="button" value="Calcular" id="calcular" onclick="calcular()">
+            
+        </div>
+
+        <div id="div2">
+            <p id="retorno"></p>
+        </div>
+
+    </section>
+
+    <footer><p>@UniEURO</p></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
