@@ -53,17 +53,18 @@ function calcular() {
     } else if (valor && porcentagem && prouni[1].checked) {
         let semestre = valor * 6
         retorno.innerHTML = `
-        Valor da mensalidade: ${valor} <br>
-        Valor do semestre: ${semestre} <br>
-        Valor do semestre com desconto do IES: ${semestre - (porcentagem / 100 * semestre)} <br>
-        Valor do semestre com desconto do IES e Prouni 50%: ${(semestre - (porcentagem / 100 * semestre)) / 2}
+        Valor da mensalidade: R$${valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>
+        Valor do semestre: ${semestre.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>
+        Valor do semestre com desconto do IES: R$${(semestre - (porcentagem / 100 * semestre)).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>
+        Valor do semestre com desconto do IES e Prouni 50%: R$${((semestre - (porcentagem / 100 * semestre)) / 2).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}
         `
     } else {
         let semestre = valor * 6
         retorno.innerHTML = `
-        Valor da mensalidade: ${valor} <br>
-        Valor do semestre: ${semestre} <br>
-        Valor do semestre com desconto do IES: ${semestre - (porcentagem / 100 * semestre)} <br>
+        Valor da mensalidade: ${valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br> 
+        Valor do semestre: ${semestre.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>
+        Valor do semestre com desconto do IES: ${(semestre - (porcentagem / 100 * semestre)).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>
         `
+        // Formatacao -> valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
     }
 }
