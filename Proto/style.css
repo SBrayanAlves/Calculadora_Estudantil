@@ -1,0 +1,137 @@
+/* Definições globais */
+body {
+    background-color: #f0f4ff;  /* Cor de fundo mais suave e moderna */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;  /* Tamanho de fonte mais confortável */
+    color: #333;  /* Cor do texto mais suave */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2a3d66;  /* Cor de título mais escura e contrastante */
+    font-size: 24px;  /* Tamanho maior para o título */
+    margin-bottom: 20px;  /* Espaço abaixo do título */
+}
+
+/* Estilização do header */
+header {
+    padding: 20px;
+    background-color: #3f7ff7;  /* Azul mais vibrante para destaque */
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave para destaque */
+}
+
+#Unieuro_logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilização da calculadora (seção) */
+section {
+    background-color: #ffffff;  /* Fundo branco para destacar os inputs */
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;  /* Limitar a largura para telas grandes */
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);  /* Sombra mais forte para destaque */
+}
+
+/* Container dos inputs */
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: #2a3d66;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    background-color: #3f7ff7;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="button"]:hover {
+    background-color: #2a5ba8;  /* Cor mais escura no hover */
+}
+
+/* Estilo para as opções de ProUNI */
+.opcao-radio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.opcao-radio label {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilização do footer */
+footer {
+    font-style: italic;
+    background-color: #3f7ff7;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* Estilo para o resultado */
+#retorno {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="button"] {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
